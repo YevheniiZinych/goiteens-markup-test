@@ -1,0 +1,166 @@
+.hero {
+  height: 1690px;
+
+  @include tablet {
+    height: 2125px;
+  }
+
+  @include laptop {
+    height: 1830px;
+  }
+  &__title {
+    width: 220px;
+
+    margin-top: 24px;
+
+    color: var(--grey-text-color);
+
+    @include tablet {
+      width: 690px;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 48px;
+
+      @include laptop {
+        width: 864px;
+        font-size: 48px;
+
+        line-height: 56px;
+      }
+    }
+
+    &__text {
+      background: linear-gradient(90deg, rgb(235, 163, 113), rgb(103, 33, 164));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+      font-size: 52px;
+      line-height: calc(68 / 52);
+
+      @include tablet {
+        font-size: 107px;
+        font-weight: 700;
+        line-height: 146px;
+      }
+
+      @include laptop {
+        font-size: 146px;
+        line-height: 190px;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 375px;
+    height: 375px;
+
+    background-image: url(/img/grid.png);
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+    @include tablet {
+      background-image: url(/img/grid-tab.png);
+      width: 775px;
+      height: 775px;
+    }
+
+    @include laptop {
+      width: 1200px;
+    }
+
+    @include desktop {
+      width: 100%;
+    }
+
+    &__art,
+    &__cursor,
+    &__boy,
+    &__color {
+      position: absolute;
+    }
+
+    &__art {
+      width: 120px;
+
+      top: 19px;
+      right: 260px;
+
+      @include tablet {
+        width: 263px;
+
+        right: 562px;
+      }
+      @include laptop {
+        left: 250px;
+      }
+
+      @include desktop {
+        left: 363px;
+      }
+    }
+
+    &__boy {
+      left: 138px;
+      top: 20px;
+
+      @include tablet {
+        width: 416px;
+        height: 751px;
+
+        left: 189px;
+      }
+
+      @include laptop {
+        left: 400px;
+      }
+
+      @include desktop {
+        left: 570px;
+      }
+    }
+
+    &__cursor {
+      left: 60px;
+      bottom: 93px;
+
+      @include tablet {
+        width: 142px;
+        height: 59px;
+
+        bottom: 378px;
+      }
+
+      @include laptop {
+        left: 250px;
+        bottom: 420px;
+      }
+
+      @include desktop {
+        left: 363px;
+      }
+    }
+
+    &__color {
+      display: none;
+
+      @include tablet {
+        display: inline-block;
+        left: 558px;
+        bottom: 154px;
+      }
+
+      @include laptop {
+        left: 860px;
+        bottom: 200px;
+      }
+
+      @include desktop {
+        left: 943px;
+      }
+    }
+  }
+}

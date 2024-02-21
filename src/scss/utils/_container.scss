@@ -1,0 +1,16 @@
+.container {
+  width: 351px;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 703px;
+  }
+
+  @include laptop {
+    width: 1200px;
+  }
+
+  @include desktop {
+    width: 1488px;
+  }
+}

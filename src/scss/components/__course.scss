@@ -1,0 +1,151 @@
+.course {
+  width: 375px;
+
+  margin: 80px auto 0;
+
+  background: url("/img/course-bg.png");
+  background-color: var(--orange-bg-course);
+
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    width: 768px;
+
+    background: url("/img/course-bg-tab.png");
+    background-color: var(--orange-bg-course);
+  }
+
+  @include laptop {
+    width: 1280px;
+  }
+
+  @include desktop {
+    width: 1600px;
+  }
+
+  &__wrap {
+    @include laptop {
+      width: 790px;
+    }
+
+    @include desktop {
+      width: 904px;
+    }
+  }
+
+  &__title,
+  &__title__mob {
+    display: inline-block;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    margin-top: 40px;
+
+    @include tablet {
+      font-size: 32px;
+      line-height: 42px;
+    }
+
+    @include tablet {
+      width: 293px;
+    }
+  }
+
+  &__title {
+    display: none;
+
+    @include tablet {
+      display: inline-block;
+      width: 538px;
+    }
+
+    @include laptop {
+      width: 290px;
+    }
+  }
+
+  &__title__mob {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__toggle__dtn {
+    position: relative;
+    margin-top: 16px;
+    width: 100%;
+    height: 40px;
+
+    gap: 20px;
+
+    color: var(--grey-input);
+
+    font-size: 12px;
+    line-height: 16px;
+
+    background-color: var(--white-color);
+    border-radius: 144px;
+
+    cursor: pointer;
+
+    @include laptop {
+      height: 68px;
+
+      margin-top: 54px;
+    }
+
+    @include laptop {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  &__toggle__dtn::before {
+    content: attr(data-value);
+    position: absolute;
+    left: var(--left, 0);
+    right: var(--right, "");
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 100%;
+
+    color: var(--white-color);
+
+    background-color: var(--purple-color);
+
+    border-radius: 144px;
+  }
+
+  &__video {
+    width: 100%;
+    height: 187px;
+
+    margin-top: 32px;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    @include tablet {
+      height: 395px;
+    }
+
+    @include laptop {
+      height: 445px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

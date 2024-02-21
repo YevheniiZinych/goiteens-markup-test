@@ -1,0 +1,44 @@
+<section class="hero">
+  <div class="container flex flex-col items-center">
+    <div
+      class="hero__title-wrappr relative w-full text-center flex flex-col justify-center items-center mb-12"
+    >
+      <h1 class="hero__title font-medium text-xxl">
+        Курси вебдизайну для підлітків
+      </h1>
+      <span class="hero__title__text text-center font-bold">WEB DESIGN</span>
+    </div>
+
+    <div class="hero__img">
+      <img
+        class="hero__img__art"
+        src="./img/art.svg"
+        alt="art"
+        width="143"
+        height="143"
+      />
+
+      <svg class="hero__img__cursor" width="81" height="38">
+        <use href="./img/icon.svg#coursor"></use>
+      </svg>
+
+      <img
+        class="hero__img__color"
+        src="./img/color.svg"
+        alt="choice color picture"
+      />
+      <img
+        class="hero__img__boy"
+        width="207"
+        height="773"
+        src="./img/boy.svg"
+        alt="portrait boy with headphones around neck"
+      />
+    </div>
+    <div class="text__section absolute">
+      <div class="text__section-container">
+        {% include "./hero-text.html" %} {% include "./hero-form.html" %}
+      </div>
+    </div>
+  </div>
+</section>

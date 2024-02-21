@@ -1,0 +1,36 @@
+.description__profi {
+  @include tablet {
+    padding-left: 32px;
+  }
+
+  @include laptop {
+    width: 100%;
+  }
+  .profi__info > span {
+    background-color: var(--red-profi-info);
+  }
+
+  .profi__list > li:not(:last-child) {
+    border-bottom: 1px solid rgb(245, 209, 184);
+  }
+
+  .profi__list > li > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 4px;
+
+    color: var(--grey-text-color);
+  }
+
+  .profi__list > li > svg {
+    margin-bottom: 4px;
+  }
+
+  .profi__list > li > img {
+    margin-left: 0;
+  }
+}

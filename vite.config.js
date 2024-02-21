@@ -1,11 +1,13 @@
 import { defineConfig } from "vite";
+import nunjucks from "vite-plugin-nunjucks";
 
 export default defineConfig({
   base: "/goiteens-markup-test",
-  plugins: [],
-  root: "./public",
+  root: "./src",
+  plugins: [nunjucks()],
+
   server: {
-    port: 4080,
+    port: 4040,
     open: true,
   },
 });

@@ -1,0 +1,107 @@
+.description {
+  position: relative;
+  width: 375px;
+
+  margin: 0 auto;
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include laptop {
+    width: 1280px;
+    height: 1572px;
+    background-image: url("/img/description-bg.png");
+    background-repeat: no-repeat;
+    background-position: 0 90%;
+  }
+
+  @include desktop {
+    width: 1600px;
+    height: 1460px;
+    background-position: 0 105%;
+  }
+
+  .back-junior {
+    display: inline-block;
+    width: 100%;
+    background-color: var(--purple-lite-second);
+
+    @include tablet {
+      width: 703px;
+      margin: 0 auto;
+    }
+    @include laptop {
+      width: 558px;
+      margin: 0;
+      height: 880px;
+
+      margin-top: 170px;
+    }
+
+    @include desktop {
+      width: 732px;
+    }
+  }
+
+  .back-profi {
+    display: inline-block;
+    width: 100%;
+    background-color: var(--orange-lite);
+    margin-top: 40px;
+
+    @include tablet {
+      width: 703px;
+      margin: 40px auto 0;
+    }
+
+    @include laptop {
+      width: 558px;
+      margin: 0;
+
+      margin-top: 312px;
+    }
+
+    @include desktop {
+      width: 732px;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    width: 300px;
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    margin: 80px 0 32px 0;
+
+    @include tablet {
+      width: 480px;
+      margin-bottom: 40px;
+
+      font-size: 32px;
+      line-height: 42px;
+    }
+
+    @include laptop {
+      position: absolute;
+      right: 55px;
+      top: 150px;
+
+      text-align: end;
+    }
+
+    @include desktop {
+      width: 480px;
+
+      top: 110px;
+
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
+}

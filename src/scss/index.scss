@@ -1,0 +1,20 @@
+// Utils
+@import "./utils/mixins";
+@import "./utils/body";
+@import "./utils/container";
+@import "./utils/vars-color";
+@import "./utils/breakpoints";
+
+// Components
+@import "./components/header";
+@import "./components/footer";
+@import "./components/main";
+@import "./components/hero";
+@import "./components/hero-form";
+@import "./components/hero-text";
+@import "./components/description.scss";
+@import "./components/description-junior";
+@import "./components/description-profi";
+@import "./components/_course";
+@import "./components/course-descroption-card";
+@import "./components/course-descroption-card-profi";

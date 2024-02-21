@@ -1,0 +1,143 @@
+.description__junior {
+  @include tablet {
+    padding-left: 32px;
+  }
+
+  @include laptop {
+    width: 100%;
+  }
+  &__title {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+
+    margin-top: 24px;
+
+    @include tablet {
+      font-size: 24px;
+      line-height: 31px;
+
+      margin-top: 40px;
+    }
+
+    @include desktop {
+      margin-left: 120px;
+    }
+  }
+
+  &__info {
+    row-gap: 24px;
+    column-gap: 8px;
+
+    margin-top: 24px;
+
+    @include tablet {
+      column-gap: 24px;
+    }
+
+    span:last-child {
+      display: inline-block;
+
+      @include laptop {
+        margin-left: 60px;
+      }
+    }
+
+    @include laptop {
+      margin-bottom: 40px;
+    }
+
+    @include desktop {
+      margin-left: 100px;
+    }
+  }
+
+  &__info > span {
+    display: inline-block;
+
+    font-size: 12px;
+    line-height: 26px;
+
+    padding: 4px 12px;
+
+    background-color: var(--purple-lite-main);
+
+    border-radius: 112px;
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 26px;
+
+      padding: 12px 24px;
+    }
+  }
+
+  &__text {
+    width: 305px;
+
+    margin-top: 24px;
+
+    color: var(--grey-text-color);
+
+    text-align: left;
+
+    @include tablet {
+      width: 600px;
+
+      font-size: 20px;
+
+      line-height: 28px;
+    }
+
+    @include laptop {
+      width: 510px;
+
+      margin-bottom: 40px;
+    }
+
+    @include desktop {
+      width: 630px;
+    }
+  }
+
+  &__span {
+    display: inline-block;
+    font-weight: 600;
+
+    margin-top: 15px;
+
+    color: var(--grey-text-color);
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    @include desktop {
+      width: 667px;
+    }
+  }
+
+  &__list {
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+
+  &__list > li > p {
+    color: var(--grey-descr-color);
+  }
+
+  &__list > li:not(:last-child) {
+    border-bottom: 1px solid rgb(194, 176, 245);
+
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+  }
+
+  &__list > li > img {
+    margin-left: 7px;
+    margin-bottom: 8px;
+  }
+}

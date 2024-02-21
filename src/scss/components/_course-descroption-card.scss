@@ -1,0 +1,200 @@
+.course__descr__list {
+  padding-bottom: 80px;
+}
+
+.course__descr__item {
+  width: 100%;
+  height: 84px;
+
+  overflow: hidden;
+
+  padding: 12px 16px;
+  margin-top: 20px;
+
+  background-color: var(--white-color);
+  border-radius: 16px;
+
+  @include tablet {
+    height: 130px;
+  }
+
+  @include laptop {
+    height: 198px;
+  }
+
+  &-container {
+    @include laptop {
+      padding-top: 40px;
+    }
+  }
+
+  .course__descr__item-container > svg {
+    height: 40px;
+    width: 25px;
+
+    @include tablet {
+      height: 88px;
+      width: 72px;
+    }
+  }
+
+  .course__descr__number {
+    display: inline-block;
+
+    margin-right: 12px;
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 55px;
+
+    color: var(--purple-color);
+
+    @include tablet {
+      font-size: 120px;
+
+      line-height: 100px;
+    }
+  }
+
+  .course__descr__classes {
+    width: 85px;
+
+    margin-right: 25px;
+
+    @include tablet {
+      width: 140px;
+
+      margin-top: 10px;
+    }
+  }
+
+  .course__descr__classes > span:first-child {
+    display: inline-block;
+    padding: 2px 12px;
+
+    font-size: 8px;
+    line-height: 10px;
+
+    color: var(--grey-input);
+
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 11px;
+
+    @include tablet {
+      padding: 8px 16px;
+
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
+  .course__descr__classes > span:last-child {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+
+    color: var(--purple-color);
+
+    @include tablet {
+      font-size: 32px;
+
+      line-height: 42px;
+    }
+  }
+
+  .course__descr__info {
+    gap: 2px;
+
+    font-size: 12px;
+    line-height: 16px;
+
+    padding: 5px;
+
+    color: var(--purple-color);
+
+    cursor: pointer;
+
+    @include tablet {
+      font-size: 24px;
+      line-height: 31px;
+
+      margin-left: 80px;
+    }
+    @include laptop {
+      margin-left: 160px;
+    }
+    @include desktop {
+      margin-left: 300px;
+    }
+  }
+
+  .course__descr__text {
+    margin-top: 20px;
+
+    @include tablet {
+      margin-top: 40px;
+    }
+
+    @include laptop {
+      margin-top: 50px;
+    }
+
+    & h4 {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 32px;
+      text-transform: uppercase;
+
+      @include laptop {
+        font-size: 24px;
+      }
+    }
+
+    li {
+      font-size: 14px;
+      line-height: 20px;
+
+      color: var(--grey-descr-color);
+    }
+
+    &__theme {
+      margin-bottom: 32px;
+
+      @include tablet {
+        margin-left: 24px;
+      }
+
+      li {
+        @include laptop {
+          font-size: 20px;
+          line-height: 32px;
+        }
+      }
+    }
+
+    &__theme li:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    &__project li:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  .course__descr__text__project {
+    @include tablet {
+      margin-left: 24px;
+    }
+
+    li {
+      @include laptop {
+        font-size: 20px;
+
+        line-height: 32px;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<section class="course">
+  <div class="container laptop:flex laptop:justify-between">
+    <div class="tablet:text-center">
+      <h3 class="course__title__mob">Програма курсу</h3>
+      <h3 class="course__title">Оберіть курс за віком дитини</h3>
+    </div>
+
+    <div class="course__wrap">
+      <div class="course__toggle__dtn flex items-center justify-around">
+        <span id="junior">Design Junior (10-12р.)</span>
+        <span id="profi">Digital Design (13-16р.)</span>
+      </div>
+
+      <div class="course__video">
+        <iframe
+          src="https://www.youtube.com/embed/Iuap-kdcWNk?si=KHJ8LC640057Vk07"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      {% include "src/html/course-description-card.html" %}
+    </div>
+  </div>
+</section>

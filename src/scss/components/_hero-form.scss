@@ -1,0 +1,135 @@
+.section__form-wrap {
+  gap: 24px;
+
+  color: var(--grey-input);
+
+  @include tablet {
+    gap: 36px;
+  }
+
+  & label {
+    position: relative;
+
+    width: 100%;
+
+    input {
+      width: 330px;
+      height: 48px;
+      padding: 0 24px;
+
+      border: 1px solid rgb(237, 237, 237);
+      border-radius: 140px;
+      outline: none;
+
+      @include tablet {
+        width: 100%;
+      }
+
+      @include laptop {
+        height: 64px;
+
+        font-size: 20px;
+        line-height: 32px;
+      }
+
+      @include desktop {
+        width: 660px;
+      }
+    }
+
+    button {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  & label:nth-child(2) input {
+    padding-left: 78px;
+  }
+
+  & label:nth-child(2) > div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    left: 16px;
+    top: 14px;
+
+    @include laptop {
+      top: 22px;
+    }
+  }
+
+  & .form-submit-btn {
+    position: relative;
+    width: 100%;
+    height: 48px;
+
+    padding: 8px 24px;
+
+    color: var(--white-color);
+
+    border-radius: 104px;
+
+    background-color: var(--purple-color);
+
+    cursor: pointer;
+
+    @include laptop {
+      height: 64px;
+      width: 538px;
+
+      margin-right: 15px;
+
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    @include desktop {
+      width: 656px;
+    }
+  }
+
+  & .form-submit-btn::after {
+    display: none;
+    content: " ";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+    width: 100%;
+    height: 100%;
+
+    border: 3px solid rgb(26, 26, 26);
+    border-radius: 64px;
+
+    z-index: -1;
+
+    @include laptop {
+      display: inline-block;
+    }
+  }
+
+  & .form-submit-btn:is(:hover, :focus, :active) {
+    background-color: var(--active-btn);
+  }
+
+  & .form-submit-btn:is(:hover, :focus):after {
+    background-color: var(--black-color);
+  }
+
+  & .form-submit-btn:is(:active):after {
+    background-color: var(--black-color);
+    left: 5px;
+    top: 5px;
+  }
+
+  & .form-submit-btn:active {
+    margin-left: 20px;
+  }
+}
